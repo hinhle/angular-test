@@ -2,3 +2,39 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mdc-list-item {
+    padding: 0 !important;
+}
+
+.custom-container {
+    padding: 0 2rem;
+}
+
+.mat-button-toggle-group-appearance-standard {
+    border-radius: 0px;
+}
+
+.mat-button-toggle-appearance-standard .mat-button-toggle-label-content {
+    line-height: 36px !important;
+}
+
+.mat-button-toggle-checked {
+    background-color: #eaf3ff;
+}
+
+.mat-button-toggle-checked.mat-button-toggle-appearance-standard {
+    color: #0d6efd;
+}
+
+.mat-button-toggle-standalone.mat-button-toggle-appearance-standard, .mat-button-toggle-group-appearance-standard {
+    border: none !important;
+}
+
+.mat-button-toggle-group-appearance-standard .mat-button-toggle+.mat-button-toggle {
+    border-left: none;
+}
+
+.bg-secondary-custom {
+    background-color: #eaf3ff;
+}
