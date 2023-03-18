@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { NavbarOption } from 'src/app/shared/models/navbar-option.model';
 
 @Component({
   selector: 'app-navbar',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-
+  @Input() listOptions: NavbarOption[] = [];
+  @Input() expanded: boolean = true;
 }

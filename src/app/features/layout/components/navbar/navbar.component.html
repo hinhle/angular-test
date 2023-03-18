@@ -1,1 +1,8 @@
-<p>navbar works!</p>
+<mat-nav-list>
+    <mat-list-item *ngFor="let option of listOptions">
+        <a [routerLink]="option.link" routerLinkActive="bg-primary" class="nav-link" [routerLinkActiveOptions]="{exact: false}">
+            <i [class]="option.icon"></i>
+            <h4 class="d-inline-block ms-1" *ngIf="expanded">{{ option.title }}</h4>
+        </a>
+    </mat-list-item>
+</mat-nav-list>

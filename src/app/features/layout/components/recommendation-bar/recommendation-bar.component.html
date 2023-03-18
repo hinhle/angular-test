@@ -1,1 +1,27 @@
-<p>recommendation-bar works!</p>
+<div class="rmd-row">
+    <div class="rmd-container custom-container d-flex flex-lg-row flex-column align-items-center py-3">
+        <h4 class="m-0 pe-4 fw-bold">Pending Recommendation</h4>
+        <div class="rmd-button-group d-flex">
+            <button type="button" class="btn btn-outline-primary me-1" [routerLink]="greenLiquorBtn.id | rmdLinkPipe" [disabled]="greenLiquorBtn.disabled">
+                <i class="fa-brands fa-react"></i>
+                <span class="ms-1">Green Liquor</span>
+            </button>
+            <button type="button" class="btn btn-outline-primary me-1" [routerLink]="fsBtn.id | rmdLinkPipe" [disabled]="fsBtn.disabled">
+                <i class="fa-solid fa-share-nodes"></i>
+                <span class="ms-1">FS</span>
+            </button>
+            <button type="button" class="btn btn-outline-primary me-1" [routerLink]="tankOneBtn.id | rmdLinkPipe" [disabled]="tankOneBtn.disabled">
+                <i class="fa-solid fa-database"></i>
+                <span class="ms-1">Tank 1</span>
+            </button>
+            <button type="button" class="btn btn-outline-primary me-1" [routerLink]="tankTwoBtn.id | rmdLinkPipe" [disabled]="tankTwoBtn.disabled">
+                <i class="fa-solid fa-database"></i>
+                <span class="ms-1">Tank 2</span>
+            </button>
+            <button type="button" class="btn btn-outline-primary me-1" [routerLink]="tankThreeBtn.id | rmdLinkPipe" [disabled]="tankThreeBtn.disabled">
+                <i class="fa-solid fa-database"></i>
+                <span class="ms-1">Tank 3</span>
+            </button>            
+        </div>
+    </div>
+</div>

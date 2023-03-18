@@ -1,2 +1,10 @@
-<p>layout works!</p>
-<router-outlet></router-outlet>
+<mat-drawer-container class="drawer-container" autosize>
+    <mat-drawer #drawer [mode]="'side'" [opened]="true">
+        <app-navbar [listOptions]="listOptions" [expanded]="expanded"></app-navbar>
+    </mat-drawer>
+    <mat-drawer-content #content>
+        <app-topbar (toggleNavbar)="handleToggleNavbar()"></app-topbar>
+        <app-recommendation-bar></app-recommendation-bar>
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>
