@@ -4,18 +4,20 @@ import { RecommendationComponent } from './containers/recommendation/recommendat
 import { RecommendationTableComponent } from './components/recommendation-table/recommendation-table.component';
 import { RecommendationGridComponent } from './components/recommendation-grid/recommendation-grid.component';
 import { RecommendationRoutingModule } from './recommendation-routing.module';
-
-
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     RecommendationComponent,
     RecommendationTableComponent,
-    RecommendationGridComponent
+    RecommendationGridComponent,
   ],
   imports: [
     CommonModule,
-    RecommendationRoutingModule
-  ]
+    RecommendationRoutingModule,
+    MatButtonToggleModule,
+    FormsModule,
+  ],
 })
-export class RecommendationModule { }
+export class RecommendationModule {}

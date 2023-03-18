@@ -4,7 +4,7 @@ import { RecommendationComponent } from './containers/recommendation/recommendat
 
 export const routes: Routes = [
   {
-    path: '',
+    path: ':id',
     component: RecommendationComponent,
   },
 ];

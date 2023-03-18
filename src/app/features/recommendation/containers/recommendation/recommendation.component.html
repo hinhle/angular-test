@@ -1,1 +1,26 @@
-<p>recommendation works!</p>
+<div class="custom-container pt-4">
+  <div class="card">
+    <div class="card-body">
+      <div class="d-flex align-items-center justify-content-between">
+        <div>
+          <mat-button-toggle-group [(ngModel)]="view" (change)="handleBtnToggle($event)">
+            <mat-button-toggle value="grid" class="me-2">
+              <i class="fa-solid fa-grip"></i>
+            </mat-button-toggle>
+            <mat-button-toggle value="table">
+              <i class="fa-solid fa-table-cells"></i>
+            </mat-button-toggle>
+          </mat-button-toggle-group>
+        </div>
+        <div>
+          <button type="button" class="btn btn-success me-1">Accept All</button>
+          <button type="button" class="btn btn-outline-success">
+            Reject All
+          </button>
+        </div>
+      </div>
+      <app-recommendation-grid *ngIf="view === 'grid'"></app-recommendation-grid>
+      <app-recommendation-table *ngIf="view === 'table'"></app-recommendation-table>
+    </div>
+  </div>
+</div>
